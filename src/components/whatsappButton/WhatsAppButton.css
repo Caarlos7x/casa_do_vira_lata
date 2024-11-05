@@ -1,0 +1,13 @@
+.whatsapp-button {
+  position: fixed;
+  bottom: 30px; /* Distância do fundo */
+  right: 30px;  /* Distância da direita */
+  width: 30px;  /* Largura do botão */
+  height: 30px; /* Altura do botão */
+  z-index: 1000; /* Para garantir que esteja acima de outros elementos */
+}
+
+.whatsapp-button img {
+  width: 100%;  /* Para que a imagem preencha o botão */
+  height: 100%;
+}

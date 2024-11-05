@@ -1,0 +1,529 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Monserrat", sans-serif;
+  background-color: #f6f7f8;
+  scroll-behavior: smooth;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  z-index: 1000;
+  animation: jump 3s infinite;
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.whatsapp-button img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Main */
+#main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Navbar */
+.casa-vl-home {
+  width: 100%;
+  background-color: #00c6d8;
+  /* padding: 1rem 2rem; */
+  text-align: center;
+}
+
+.nav-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links,
+.nav-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  align-items: center;
+  color: white;
+}
+
+/* .nav-links a,
+.nav-social a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+} */
+
+.nav-links a:hover,
+.nav-social a:hover {
+  color: #333;
+}
+
+/* Hero Section */
+#home {
+  background: url("../../../public/images/bg.svg") center/cover no-repeat;
+  padding: 5rem 5rem;
+  color: white;
+}
+
+.casa-vl-hero-row {
+  margin-left: 9.25rem;
+}
+
+.casa-vl-hero-info {
+  margin-top: 5rem;
+}
+
+.casa-vl-hero-info h3 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.casa-vl-hero-info p {
+  font-size: 2rem;
+  width: 31.25rem;
+}
+
+.hero-img {
+  background-image: url(../../../public/images/hero.png);
+  background-size: cover;
+  height: 500px;
+  width: 500px;
+}
+
+.casa-vl-hero-img {
+  padding-right: 100px;
+}
+
+/* Info Card */
+.casa-vl-hero-info-panel {
+  background-color: #ff6614;
+  padding: 1.5rem;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 200px;
+  width: 85%;
+
+  .display-patreon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    a {
+      &:hover {
+        color: #333;
+      }
+    }
+  }
+}
+
+.casa-vl-help-us a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+/* About Section */
+#about {
+  padding: 5rem 5rem;
+  text-align: center;
+}
+
+.about-title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 100px;
+}
+
+.about-title h1 {
+  font-size: 3.5rem;
+  color: black;
+  font-weight: 700;
+}
+
+.casa-vl-about-us {
+  h2 {
+    font-size: 3.5rem;
+    color: black;
+    margin-top: 3.12rem;
+  }
+
+  p {
+    text-align: justify;
+    font-size: 1.25rem;
+    margin-top: 5rem;
+    color: black;
+  }
+}
+
+.about-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 20px;
+}
+
+.about-images .about-img {
+  background-size: cover;
+  height: 350px;
+  width: 350px;
+  border-radius: 10px;
+  opacity: 0.6;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.about-images .about-img:hover {
+  opacity: 1;
+}
+
+/* Adopt Section */
+#adopt {
+  padding: 5rem 5rem;
+}
+
+.forms {
+  margin-left: 20px;
+}
+
+.adopt-title {
+  margin: 6.25rem;
+}
+
+.adopt-title h1 {
+  font-size: 2.5rem;
+  color: black;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.adopt-img {
+  background-image: url(../../../public/images/adote.png);
+  background-size: cover;
+  height: 400px;
+  width: 400px;
+}
+
+.adopt-forms {
+  background-color: white;
+  width: 37.5rem;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  margin-left: 20px;
+
+  h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: black;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-top: 50px;
+
+    a:hover {
+      color: #00c6d8;
+      text-decoration: none;
+    }
+  }
+}
+
+/* Footer */
+.casa-vl-footer {
+  background-color: #00c6d8;
+  color: white;
+  padding: 2rem;
+}
+
+.footer-top {
+  display: flex;
+  margin: 0 auto;
+  margin-left: 20%;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer-img {
+  background-image: url(../../../public/images/logo-insta-casa-vl.jpg);
+  background-size: cover;
+  height: 80px;
+  width: 80px;
+  border-radius: 15px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+
+  a {
+    &:hover {
+      color: #333;
+    }
+  }
+}
+
+.footer-social a,
+.footer-logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.footer-rights {
+  text-align: center;
+  margin-top: 2.5rem;
+  font-size: 1rem;
+
+  span:nth-child(2) {
+    &:hover {
+      color: #333;
+    }
+  }
+}
+
+.footer-rights span {
+  font-weight: 700;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .hero-img,
+  .adopt-img {
+    height: 400px;
+    width: 400px;
+  }
+
+  .adopt-forms {
+    width: 30rem;
+  }
+
+  .about-title h1,
+  .adopt-title h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #home {
+    padding: 2rem 1rem;
+  }
+
+  .hero-img,
+  .adopt-img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .casa-vl-hero-info h3 {
+    font-size: 2.5rem;
+  }
+
+  .casa-vl-hero-info p {
+    font-size: 1.5rem;
+  }
+
+  .about-images .about-img {
+    height: 250px;
+    width: 250px;
+  }
+
+  .adopt-forms {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-title {
+    font-size: 1rem !important;
+  }
+
+  #home {
+    padding: 1rem;
+  }
+
+  .casa-vl-hero-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .casa-vl-hero-info {
+    order: 1;
+    text-align: center;
+    margin-left: -100px;
+
+    h3 {
+      font-size: 2.7rem !important;
+    }
+
+    p {
+      font-size: 1.5rem !important;
+      margin-top: 2rem;
+      margin-left: -50px;
+      width: 300px;
+    }
+  }
+
+  .casa-vl-hero-img {
+    order: 2;
+  }
+
+  .hero-img {
+    height: 250px;
+    width: 250px;
+  }
+
+  .casa-vl-hero-info-panel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .display-patreon a {
+    margin: 20px 0 20px 0;
+    text-align: center;
+
+    &:hover {
+      color: #333;
+    }
+  }
+
+  #about {
+    padding: 1.5rem;
+  }
+
+  .about-title h1 {
+    font-size: 5.5rem;
+  }
+
+
+  .casa-vl-about-us {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      font-size: 2.3rem;
+      color: #333;
+      margin: 0 auto;
+    }
+  }
+
+  .casa-vl-hero-info h3 {
+    font-size: 2rem;
+  }
+
+  .casa-vl-hero-info p {
+    font-size: 1.25rem;
+  }
+
+  .about-images .about-img {
+    height: 150px;
+    width: 150px;
+  }
+
+  #adopt {
+    padding: 1.5rem;
+  }
+
+  .adopt-title {
+    margin: 0 0 3.12rem 0;
+  }
+
+  .adopt-forms h2 {
+    font-size: 2rem;
+  }
+
+  .photogrid {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .photogrid::before,
+  .photogrid::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    z-index: 1;
+  }
+
+  .photogrid::before {
+    left: 0;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0)
+    );
+  }
+
+  .photogrid::after {
+    right: 0;
+    background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0)
+    );
+  }
+
+  .footer-social {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 25px;
+
+    a {
+      &:hover {
+        color: #333;
+      }
+    }
+  }
+
+  .footer-rights {
+    font-size: 0.8rem;
+
+    span:nth-child(2) {
+      &:hover {
+        color: #333;
+      }
+    }
+  }
+}

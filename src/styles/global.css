@@ -1,0 +1,29 @@
+:root {
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+
+
+
+
+
+    /* Azul pastel */
+    --blue-pastel-light: #A3DFF8;
+    --blue-pastel-dark: #7CCFE7;
+
+    /* Verde pastel */
+    --green-pastel-light: #B7EFC5;
+    --green-pastel-dark: #97D7A8;
+
+    /* Amarelo pastel */
+    --yellow-pastel-light: #FFF4B1;
+    --yellow-pastel-dark: #FFEB80;
+
+    /* Cores de fundo e texto */
+    --background-light: #F8F9FA;
+    --background-dark: #2E2E2E;
+    --text-light: #333333;
+    --text-dark: #FFFFFF;
+}

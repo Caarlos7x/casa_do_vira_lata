@@ -1,0 +1,17 @@
+.custom-carousel {
+    background-color: #ffcc01;
+    padding: 20px;
+}
+
+.product-image {
+    width: 120px;
+    height: auto;
+}
+
+a {
+    color: black;
+}
+
+.product-image {
+    border-radius: 10px;
+}
